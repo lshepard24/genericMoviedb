@@ -24,7 +24,7 @@ class SearchContainer extends Component {
           handleChange={this.handleChange}
           input={input}
         />
-        <Movies movies={filteredMovies} />
+        {/* <Movies movies={filteredMovies} /> */}
       </div>
     );
   }

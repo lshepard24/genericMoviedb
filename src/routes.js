@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
-import { SearchContainer } from './containers/index';
+import { SearchContainer, HomeContainer } from './containers/index';
 
 class Routes extends Component {
   render() {
