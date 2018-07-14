@@ -30,7 +30,7 @@ class HomeContainer extends Component {
       <div>
         This is the home
         <SearchContainer />
-        <Home nowPlayingMovie={this.state.nowPlaying}/>
+        <Home movies={this.state.nowPlaying}/>
       </div>
     );
   }

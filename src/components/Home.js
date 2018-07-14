@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { Search } from './index';
 
 const Home = (props) => {
-  const nowPlaying = props.nowPlaying ? props.nowPlaying : [];
+  const nowPlaying = props.movies.results;
+  console.log('path', nowPlaying);
   return (
     <div>
       <h2>Now Playing</h2>
