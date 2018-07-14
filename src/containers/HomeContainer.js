@@ -28,7 +28,6 @@ class HomeContainer extends Component {
   render() {
     return(
       <div>
-        This is the home
         <SearchContainer />
         <Home movies={this.state.nowPlaying}/>
       </div>

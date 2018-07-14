@@ -7,11 +7,11 @@ const Home = (props) => {
   return (
     <div>
       <h2>Now Playing</h2>
-      <div className="row">
+      <div className="flex-container">
       {
         nowPlaying && nowPlaying.map(movie => (
-          <div className="col-xs-4" key={movie.id}>
-            <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}/>
+          <div className="item" key={movie.id}>
+            <img src={`https://image.tmdb.org/t/p/w300/${movie.poster_path}`}/>
             <div className="caption">
               <h4>
                 <span>{ movie.title }</span>
