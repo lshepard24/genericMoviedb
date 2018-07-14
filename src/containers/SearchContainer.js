@@ -16,8 +16,7 @@ class SearchContainer extends Component {
 
   render() {
     const input = this.state.input;
-    const filteredMovies = this.props.movies.filter(movie => movie.name.match(input));
-
+    // const filteredMovies = this.props.movies.filter(movie => movie.name.match(input));
     return (
       <div>
         <Search

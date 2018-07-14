@@ -7,7 +7,6 @@ class Routes extends Component {
     return (
       <Switch>
         <Route exact path="/" component={HomeContainer} />
-        <Route path="/movies" component={SearchContainer} />
       </Switch>
     );
   }

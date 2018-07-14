@@ -3,7 +3,6 @@ import React from 'react';
 const Search = props => {
   const handleChange = props.handleChange;
   const input = props.input;
-  console.log('props', props);
   return (
     <form className='form-group'>
       <input
@@ -14,6 +13,6 @@ const Search = props => {
       />
     </form>
   );
-}
+};
 
 export default Search;

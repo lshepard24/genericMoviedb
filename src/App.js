@@ -1,6 +1,5 @@
 import React from 'react';
 import Routes from './routes';
-import { Search } from './components/index';
 import logo from './gmdb.svg';
 import './App.css';
 
@@ -11,7 +10,6 @@ const App = () => {
         <img src={logo} className="App-logo" alt="logo" />
         <h1 className="App-title">The Generic Movie Database</h1>
       </header>
-      <Search />
       <Routes />
     </div>
   );
