@@ -3,7 +3,6 @@ import React from 'react';
 const Search = props => {
 
   const handleChange = props.handleChange;
-  const handleSubmit = props.handleSubmit;
   const input = props.input;
 
   return (
@@ -14,7 +13,6 @@ const Search = props => {
         className='form-control'
         placeholder='Enter a movie'
       />
-      <button onSubmit={handleSubmit}>Search</button>
     </form>
   );
 };

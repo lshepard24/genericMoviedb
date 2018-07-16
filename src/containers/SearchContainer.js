@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import history from '../history';
 
 import { Search, Movie } from '../components/index';
 
@@ -7,20 +8,15 @@ class SearchContainer extends Component {
   constructor() {
     super();
     this.state = {
-      input: ''
+      input: '',
+      selectedMovie: ''
     };
     this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-    // this.searchMovie = this.searchMovie.bind(this);
   }
   
   handleChange(event) {
-    this.setState({ input: event.target.value });
-  }
-  
-  handleSubmit(event) {
     event.preventDefault();
-    console.log('submitted form');
+    this.setState({ input: event.target.value });
   }
 
   // async searchMovie() {
@@ -30,9 +26,8 @@ class SearchContainer extends Component {
   // }
   
   render() {
-    console.log('the state in search container', this.state)
     const input = this.state.input;
-    // const filteredMovies = this.props.movies.filter(movie => movie.name.match(input));
+
     return (
       <div>
         <Search

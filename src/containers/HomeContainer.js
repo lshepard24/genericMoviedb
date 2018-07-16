@@ -14,10 +14,10 @@ class HomeContainer extends Component {
   }
 
   render() {
-    
+
     return(
       <div>
-        <SearchContainer />
+        <SearchContainer movie={this.props} />
         <Movie movie={this.props}/>
         <NowPlayingContainer />
       </div>
