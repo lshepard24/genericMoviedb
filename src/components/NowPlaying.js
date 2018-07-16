@@ -6,13 +6,13 @@ const NowPlaying = (props) => {
   const nowPlaying = props.movies.results;
   return (
     <div>
-      <h2>Now Playing</h2>
+      <h2>Now Playing in Theatres</h2>
       <div className="flex-container">
       {
         nowPlaying && nowPlaying.map(movie => (
           <div className="item" key={movie.id}>
           <Link to={`/now-playing/${movie.id}`}>
-            <img src={`https://image.tmdb.org/t/p/w185/${movie.poster_path}`}/>
+            <img src={`https://image.tmdb.org/t/p/w300/${movie.poster_path}`}/>
             <div className="caption">
               <h4>
                 <span>{movie.title}</span>

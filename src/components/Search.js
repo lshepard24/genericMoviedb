@@ -6,14 +6,16 @@ const Search = props => {
   const input = props.input;
 
   return (
-    <form className='form-group'>
-      <input
-        onChange={handleChange}
-        value={input}
-        className='form-control'
-        placeholder='Enter a movie'
-      />
-    </form>
+    <div>
+      <form className='form-group'>
+        <input
+          onChange={handleChange}
+          value={input}
+          className='form-control'
+          placeholder='Search a movie (e.g. name, keyword, director)'
+        />
+      </form>
+    </div>
   );
 };
 

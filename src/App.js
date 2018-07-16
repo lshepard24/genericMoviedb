@@ -9,7 +9,7 @@ const App = () => {
     <div className="App">
       <Link to="/">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+          {/* <img src={logo} className="App-logo" alt="logo" /> */}
           <h1 className="App-title">The Generic Movie Database</h1>
         </header>
       </Link>

@@ -24,7 +24,6 @@ class Movie extends Component {
     console.log('the state in movie', this.state);
     return (
       <div>
-        Movie movie movie
         {/* <h2>{movie.title}</h2> */}
       </div>
     );
