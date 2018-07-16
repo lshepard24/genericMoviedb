@@ -26,10 +26,11 @@ class HomeContainer extends Component {
   }
 
   render() {
+    let playingMovies = this.state.nowPlaying;
     return(
       <div>
         <SearchContainer />
-        <Home movies={this.state.nowPlaying}/>
+        <Home movies={playingMovies}/>
       </div>
     );
   }
