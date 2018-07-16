@@ -2,12 +2,11 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Search } from './index';
 
-const Home = (props) => {
+const NowPlaying = (props) => {
   const nowPlaying = props.movies.results;
-  console.log('path', nowPlaying);
   return (
     <div>
-      {/* <h2>Now Playing</h2>
+      <h2>Now Playing</h2>
       <div className="flex-container">
       {
         nowPlaying && nowPlaying.map(movie => (
@@ -22,10 +21,10 @@ const Home = (props) => {
             </Link>
           </div>
         ))
-      } */}
-      {/* </div> */}
+      }
+      </div>
     </div>
   );
 };
 
-export default Home;
+export default NowPlaying;
