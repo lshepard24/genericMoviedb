@@ -9,14 +9,20 @@ class SearchResults extends Component {
     return (
       <div>
         <button onClick={handleSearch}>Search</button>
-        <div>
-          {
-            movies && movies.map(movie => (
-              <div key={movie.id}>
-              <h2>{movie.title}</h2>
+        <div className="flex-container">
+          { 
+            movies && movies.length > 0 ? movies && movies.map(movie => ( 
+              <div className="item" key={movie.id}>
+              <img src={`https://image.tmdb.org/t/p/w300/${movie.poster_path}`}/>
+              <div className="caption">
+                <h4>
+                  <span>{movie.title}</span>
+                </h4>
+              </div>
               </div>
             ))
-          }
+           : <h1>Your Search Yielded No Results</h1>
+        }
         </div>
       </div>
     );
