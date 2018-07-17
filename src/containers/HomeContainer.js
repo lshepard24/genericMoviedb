@@ -9,7 +9,7 @@ class HomeContainer extends Component {
   constructor() {
     super();
     this.state = {
-      searchInput: ''
+      input: ''
     };
   }
 
@@ -17,8 +17,7 @@ class HomeContainer extends Component {
 
     return(
       <div>
-        <SearchContainer movie={this.props} />
-        <Movie movie={this.props}/>
+        <SearchContainer movie={this.state.input} />
         <NowPlayingContainer />
       </div>
     );

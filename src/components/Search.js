@@ -3,16 +3,19 @@ import React from 'react';
 const Search = props => {
 
   const handleChange = props.handleChange;
+  const handleSearch = props.handleSearch;
   const input = props.input;
+
+  console.log('props in search', props);
 
   return (
     <div>
-      <form className='form-group'>
+      <form className='form-group' onSubmit={handleSearch}>
         <input
           onChange={handleChange}
           value={input}
           className='form-control'
-          placeholder='Search a movie (e.g. name, keyword, director)'
+          placeholder='Search a movie'
         />
       </form>
     </div>
