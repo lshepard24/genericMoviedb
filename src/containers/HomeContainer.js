@@ -1,23 +1,23 @@
 import React, { Component } from 'react';
-import axios from 'axios';
-import history from '../history';
-
-import { Movie } from '../components/index';
-import { SearchContainer, NowPlayingContainer } from './index';
+import { Search } from '../components/index';
+import { NowPlayingContainer } from './index';
 
 class HomeContainer extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       input: ''
     };
   }
 
+  componentDidMount() {
+    console.log('this is when the component mounts in homecontainer');
+  }
+
   render() {
-    console.log('state in home container', this.state)
     return(
       <div>
-        <SearchContainer movie={this.state.input} />
+        <Search movie={this.state.input} />
         <NowPlayingContainer />
       </div>
     );

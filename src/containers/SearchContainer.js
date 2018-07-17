@@ -21,30 +21,27 @@ class SearchContainer extends Component {
   }
 
   async handleSearch() {
-    let query = this.state.input;
-    let res = await axios(`https://api.themoviedb.org/3/search/movie?include_adult=false&page=1&language=en-US&api_key=6832af0b5adf0f6be66a81304f9fe064&query=${query}`);
-    let data = res.data;
+    const query = this.state.input;
+    const res = await axios(`https://api.themoviedb.org/3/search/movie?include_adult=false&page=1&language=en-US&api_key=6832af0b5adf0f6be66a81304f9fe064&query=${query}`);
+    const data = res.data;
     this.setState({ movies: data });
     await history.push('/movies');
   }
 
   render() {
     const input = this.state.input;
-    console.log('the state movies', this.state);
-
+    
     return (
       <div className="search-control">
         <Search
           handleChange={this.handleChange}
           input={input}
-          getMovie={this.getMovie}
-        />
-        { input && input.length > 0 ?
+          getMovie={this.getMovie} 
+          movie={this.state}
+          handleSearch={this.handleSearch}/>
         <SearchResults
           movie={this.state}
-          handleSearch={this.handleSearch}
         />
-        : null }
       </div>
     );
   }

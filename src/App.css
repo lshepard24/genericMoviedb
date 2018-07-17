@@ -62,7 +62,7 @@ a:hover, a:active {
 }
 
 .form-control {
-  display: inline;
+  display: inherit;
   width: 30%;
   padding: 10px 5px;
   border: 1px solid #cccccc;
@@ -72,8 +72,12 @@ a:hover, a:active {
   margin: 5px 5px 5px;
 }
 
-.search-btn {
+.form-group {
   display: inline;
   font-size: 15px;
   margin: 5px 5px 5px;
 }
+
+/* .search-container {
+  display: inline;
+} */
