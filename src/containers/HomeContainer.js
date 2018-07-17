@@ -1,23 +1,23 @@
 import React, { Component } from 'react';
 import { Search } from '../components/index';
-import { NowPlayingContainer } from './index';
+import { NowPlayingContainer, SearchContainer } from './index';
 
 class HomeContainer extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      input: ''
-    };
   }
 
-  componentDidMount() {
-    console.log('this is when the component mounts in homecontainer');
+  shouldComponentUpdate(nextProps, nextState) {
+    if (nextState === this.state) return false;
+    else return true;
   }
 
   render() {
+    console.log('the props in home container', this.props);
+
     return(
       <div>
-        <Search movie={this.state.input} />
+        <Search search={this.props}/>
         <NowPlayingContainer />
       </div>
     );

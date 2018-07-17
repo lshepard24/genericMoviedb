@@ -14,10 +14,20 @@ class SearchContainer extends Component {
     this.handleChange = this.handleChange.bind(this);
     this.handleSearch = this.handleSearch.bind(this);
   }
+  
+  componentDidMount() {
+    this.setState({ input: this.state.input, movies: this.state.movies });
+  }
 
   handleChange(event) {
     event.preventDefault();
     this.setState({ input: event.target.value });
+  }
+
+  submitForm(event) {
+    console.log('submitted form')
+    event.preventDefault();
+    this.props.history.push('/movies');
   }
 
   async handleSearch() {
@@ -30,7 +40,7 @@ class SearchContainer extends Component {
 
   render() {
     const input = this.state.input;
-    
+
     return (
       <div className="search-control">
         <Search
@@ -38,7 +48,8 @@ class SearchContainer extends Component {
           input={input}
           getMovie={this.getMovie} 
           movie={this.state}
-          handleSearch={this.handleSearch}/>
+          handleSearch={this.handleSearch}
+          />
         <SearchResults
           movie={this.state}
         />

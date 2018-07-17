@@ -7,6 +7,8 @@ const Search = (props) => {
   const handleSearch = props.handleSearch;
   const input = props.input;
 
+  console.log('props in serach', props);
+  
   return (
     <div className="search-container">
       <form className='form-group'>
