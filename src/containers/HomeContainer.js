@@ -14,6 +14,7 @@ class HomeContainer extends Component {
   }
 
   render() {
+    console.log('state in home container', this.state)
     return(
       <div>
         <SearchContainer movie={this.state.input} />

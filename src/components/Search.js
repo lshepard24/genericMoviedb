@@ -6,8 +6,6 @@ const Search = props => {
   const handleSearch = props.handleSearch;
   const input = props.input;
 
-  console.log('props in search', props);
-
   return (
     <div>
       <form className='form-group' onSubmit={handleSearch}>

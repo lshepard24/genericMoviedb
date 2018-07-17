@@ -8,7 +8,7 @@ class SearchResults extends Component {
 
     return (
       <div>
-        <button onClick={handleSearch}>Search</button>
+        <button className="search-btn" onClick={handleSearch}>Search</button>
         <div className="flex-container">
           { 
             movies && movies.length > 0 ? movies && movies.map(movie => ( 
@@ -21,7 +21,7 @@ class SearchResults extends Component {
               </div>
               </div>
             ))
-           : <h1>Your Search Yielded No Results</h1>
+           : <h2 id="no-results">Your Search Yielded No Results</h2>
         }
         </div>
       </div>

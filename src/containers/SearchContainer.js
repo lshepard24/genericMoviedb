@@ -33,16 +33,18 @@ class SearchContainer extends Component {
     console.log('the state movies', this.state);
 
     return (
-      <div>
+      <div className="search-control">
         <Search
           handleChange={this.handleChange}
           input={input}
           getMovie={this.getMovie}
         />
+        { input && input.length > 0 ?
         <SearchResults
           movie={this.state}
           handleSearch={this.handleSearch}
         />
+        : null }
       </div>
     );
   }

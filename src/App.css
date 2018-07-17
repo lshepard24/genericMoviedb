@@ -27,6 +27,10 @@ h2{
   padding: 0em .2em 0em;
 }
 
+h2#no-results {
+  color: red;
+}
+
 .flex-container {
   display: flex;
   flex-direction: row;
@@ -58,11 +62,18 @@ a:hover, a:active {
 }
 
 .form-control {
-  display: block;
-  width: 100%;
-  height: 20px;
+  display: inline;
+  width: 30%;
   padding: 10px 5px;
   border: 1px solid #cccccc;
   border-radius: 4px;
   font-size: 15px;
+  text-align: center;
+  margin: 5px 5px 5px;
+}
+
+.search-btn {
+  display: inline;
+  font-size: 15px;
+  margin: 5px 5px 5px;
 }
