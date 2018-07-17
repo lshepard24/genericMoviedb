@@ -22,13 +22,20 @@ body {
   font-size: 25px;
 }
 
-h2{
+h2 {
   font-family: Avenir;
-  padding: 0em .2em 0em;
+  text-decoration: none;
 }
 
 h2#no-results {
   color: red;
+}
+
+h3 {
+  font-family: Avenir;
+  text-decoration: none;
+  margin: 5px 5px 5px;
+  opacity: 0;
 }
 
 .flex-container {
@@ -41,15 +48,19 @@ h2#no-results {
 }
 
 .item {
+  max-width: 300px;
   border-style: solid;
   border-color: darkgray;
   padding: .5em .5em 0;
   margin-bottom: 1em;
 }
 
-.caption {
-  font-family: Avenir;
-  text-decoration: none;
+.item:hover {
+  background-color: gold;
+}
+
+.item:hover h3 {
+  opacity: 1;
 }
 
 a:link, a:visited {
@@ -57,9 +68,6 @@ a:link, a:visited {
   font-family: Avenir;
 }
 
-a:hover, a:active {
-  background-color: gold;
-}
 
 .form-control {
   display: inherit;

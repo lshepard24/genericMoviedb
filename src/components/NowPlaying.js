@@ -12,12 +12,12 @@ const NowPlaying = (props) => {
         nowPlaying && nowPlaying.map(movie => (
           <div className="item" key={movie.id}>
           <Link to={`/now-playing/${movie.id}`}>
-            <img src={`https://image.tmdb.org/t/p/w300/${movie.poster_path}`}/>
             <div className="caption">
-              <h4>
+              <h3>
                 <span>{movie.title}</span>
-              </h4>
+              </h3>
             </div>
+            <img src={`https://image.tmdb.org/t/p/w300/${movie.poster_path}`}/>
             </Link>
           </div>
         ))
