@@ -50,6 +50,12 @@ h3 {
   opacity: 0;
 }
 
+h4 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  font-size: 15px;
+}
+
 .flex-container {
   display: flex;
   flex-direction: row;

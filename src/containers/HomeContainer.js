@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import { Search } from '../components/index';
-import { NowPlayingContainer, SearchContainer } from './index';
+import { NowPlayingContainer } from './index';
 
 const HomeContainer = (props) => {
+  
+  console.log('props in home', props)
   return (
     <div>
       <Search search={props}/>

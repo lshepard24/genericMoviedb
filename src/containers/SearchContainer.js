@@ -45,9 +45,11 @@ class SearchContainer extends Component {
           movie={this.state}
           handleSearch={this.handleSearch}
           />
+          {
         <SearchResults
           movie={this.state}
         />
+          }
       </div>
     );
   }

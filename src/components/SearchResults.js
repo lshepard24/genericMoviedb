@@ -8,10 +8,14 @@ const SearchResults = (props) => {
     let textB = b.title.toLowerCase();
     return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
   });
-  console.log('results', sorted)
+
+console.log('movie ', props)
+
   return (
     <div>
-      <h2>Your Results</h2>
+    { movies && 
+      <h2>Search Results: </h2>
+    }
       <div className="flex-container">
       {
         sorted && sorted.length > 0 ? 
@@ -20,6 +24,7 @@ const SearchResults = (props) => {
               <div className="caption">
               <h3>
                 <span>{movie.title}</span>
+                <span>{movie.vote_average}</span>
               </h3>
               </div>
               <img src={`https://image.tmdb.org/t/p/w300/${movie.poster_path}`}/>

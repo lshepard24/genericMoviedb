@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const NowPlaying = (props) => {
 
   const nowPlaying = props.movies.results;
-  console.log('now playing', props)
+
   return (
     <div>
       <h2>Now Playing in Theaters</h2>
