@@ -7,9 +7,9 @@ class Routes extends Component {
   render() {
     return (
       <Switch>
-        {/* <Route exact path="/" component={HomeContainer}/> */}
-        <Route path="/" component={SearchContainer}/>
-        <Route path="/" component={SearchResults}/>
+        <Route exact path="/" component={HomeContainer}/>
+        <Route path="/results" component={SearchContainer}/>
+        <Route path="/results" component={SearchResults}/>
       </Switch>
     );
   }

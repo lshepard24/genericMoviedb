@@ -6,7 +6,7 @@ const HomeContainer = (props) => {
   return (
     <div>
       <Search search={props}/>
-      {/* <NowPlayingContainer/> */}
+      <NowPlayingContainer search={props}/>
     </div>
   );
 };

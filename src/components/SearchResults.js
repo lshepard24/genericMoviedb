@@ -8,7 +8,7 @@ const SearchResults = (props) => {
     let textB = b.title.toLowerCase();
     return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
   });
-
+  console.log('results', sorted)
   return (
     <div>
       <h2>Your Results</h2>
@@ -26,9 +26,13 @@ const SearchResults = (props) => {
             </div>
           ))
           : 
-          <h2 id="no-results">
-            Sorry! We couldn't find any movie(s) with that name. 
-          </h2>
+          null
+      }
+      {
+        sorted && sorted.length === 0 &&
+        <h2 id="no-results">
+        Sorry! We couldn't find any movie(s) with that name. 
+        </h2>
       }
       </div>
     </div>
