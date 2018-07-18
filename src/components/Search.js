@@ -17,9 +17,9 @@ const Search = (props) => {
           placeholder='Enter search here ...'
         />
       </form>
-      <Link to="/movies" onClick={handleSearch} className="form-group">
+      <button onClick={handleSearch} className="form-group">
         Search
-      </Link>
+      </button>
     </div>
   );
 };
