@@ -1,8 +1,11 @@
-# the generic movie database
+# GMdb : The Generic Movie Database
+
+## Overview
+A very generic movie database! View upcoming and top-rated movies, and search for movies by title. 
 
 ## installation
-npm install or yarn add to install dependencies, then run npm start to run the app on browser (port 3000).
+To install the app:
+npm install/yarn add to install dependencies. The app will run on port 3000 by default.
 
 ## fix
-The searchbar container must mount before search renders movie results ... refactor!
-Also, maybe add another component for error. 
+Make movie posters clickable, so users can view more info for specific movie.  
