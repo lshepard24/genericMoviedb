@@ -9,7 +9,6 @@ const SearchResults = (props) => {
     return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
   });
 
-  console.log('search results movies', sorted);
   return (
     <div>
       <h2>Your Results</h2>
@@ -28,7 +27,7 @@ const SearchResults = (props) => {
           ))
           : 
           <h2 id="no-results">
-            Sorry! We couldn't find any movies with that name. 
+            Sorry! We couldn't find any movie(s) with that name. 
           </h2>
       }
       </div>

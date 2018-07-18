@@ -7,8 +7,6 @@ const Search = (props) => {
   const handleSearch = props.handleSearch;
   const input = props.input;
 
-  console.log('props in serach', props);
-  
   return (
     <div className="search-container">
       <form className='form-group'>
@@ -16,7 +14,7 @@ const Search = (props) => {
           onChange={handleChange}
           value={input}
           className='form-control'
-          placeholder='Search a movie'
+          placeholder='Enter search here ...'
         />
       </form>
       <Link to="/movies" onClick={handleSearch} className="form-group">

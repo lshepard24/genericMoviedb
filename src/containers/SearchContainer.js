@@ -18,16 +18,10 @@ class SearchContainer extends Component {
   componentDidMount() {
     this.setState({ input: this.state.input, movies: this.state.movies });
   }
-
+  
   handleChange(event) {
     event.preventDefault();
     this.setState({ input: event.target.value });
-  }
-
-  submitForm(event) {
-    console.log('submitted form')
-    event.preventDefault();
-    this.props.history.push('/movies');
   }
 
   async handleSearch() {
@@ -39,6 +33,7 @@ class SearchContainer extends Component {
   }
 
   render() {
+
     const input = this.state.input;
 
     return (

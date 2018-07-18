@@ -7,7 +7,7 @@ body {
 }
 
 .App-logo {
-  height: 50px;
+  height: 80px;
 }
 
 .App-header {
@@ -76,8 +76,7 @@ h3 {
 }
 
 .form-control {
-  display: inherit;
-  width: 35%;
+  width: 30%;
   padding: 10px 5px;
   border: 1px solid #cccccc;
   border-radius: 4px;
@@ -87,7 +86,7 @@ h3 {
 }
 
 .form-group {
-  display: inline;
+  display: initial;
   font-size: 15px;
   margin: 5px 5px 5px;
   text-decoration: none;
@@ -106,4 +105,5 @@ a.form-group {
   display: inherit;
   background-color: gray;
   padding: 5px 5px;
+  margin: auto;
 }
