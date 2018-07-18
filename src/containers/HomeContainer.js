@@ -3,12 +3,12 @@ import { Search } from '../components/index';
 import { NowPlayingContainer } from './index';
 
 const HomeContainer = (props) => {
-  
-  console.log('props in home', props)
+  const search = props;
+  console.log('props in home', search);
+
   return (
     <div>
-      <Search search={props}/>
-      <NowPlayingContainer search={props}/>
+     Home
     </div>
   );
 };

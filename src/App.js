@@ -4,6 +4,7 @@ import Routes from './routes';
 
 import logo from './gmdb.svg';
 import './App.css';
+import { Nav } from './components/index';
 
 const App = () => {
   return (
@@ -14,7 +15,8 @@ const App = () => {
           <h1 className="App-title">The Generic Movie Database</h1>
         </header>
       </Link>
-      <Routes />
+      <Nav/>
+      <Routes/>
     </div>
   );
 };

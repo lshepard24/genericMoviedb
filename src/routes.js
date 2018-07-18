@@ -1,14 +1,20 @@
 import React, { Component } from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
-import { SearchContainer, HomeContainer, NowPlayingContainer } from './containers/index';
-import { NowPlaying, Movie, SearchResults } from './components';
+import { 
+  SearchContainer, 
+  HomeContainer, 
+  NowPlayingContainer,
+  TopRatedContainer
+ } from './containers/index';
 
 class Routes extends Component {
   render() {
     return (
       <Switch>
-        <Route exact path="/" component={HomeContainer}/>
-        <Route path="/results" component={SearchContainer}/>
+        <Route exact path="/" component={NowPlayingContainer}/>
+        <Route path="/top-movies" component={TopRatedContainer}/>
+        <Route path="/now-playing" component={NowPlayingContainer}/>
+        <Route path="/search" component={SearchContainer}/>
       </Switch>
     );
   }
